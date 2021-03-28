@@ -1,0 +1,460 @@
+/* css to reset all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css for font styles */
+html, body {
+    background-color: #fff;
+    color: #182153;
+    font-family: 'Lato', sans-serif;            
+}
+
+/* css for heading and paragraph tags */
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+h4 {
+    border-top: 1px solid #979797;
+    padding-top: 1em;
+    margin-top: 1em;
+    border-bottom: 1px solid #979797;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+h5 {
+    font-size: 0.7em;
+}
+
+p {
+    line-height: 1.8em;
+    font-size: 0.8em;
+}
+
+/* css for section tag */
+section{
+    padding: 2em 0;
+}
+
+/* css for section title */
+.title{
+    width: 100%;
+    border-bottom: 1px solid #979797;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+/* css for rows - making grids */
+.row{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* css for columns - making grids */
+.column{
+    margin-top: 1em;
+    text-align: left;
+}
+
+/* spacing in sections */
+.spacer{
+    padding-top: 1em;
+}
+
+/* when screen shrinks */
+.col-stack-margin{
+    margin-top: 0;
+}
+
+/* separate rows */
+.border-bottom{
+    border-bottom: 1px solid #979797;
+    padding-bottom: 1em;
+}
+
+/* tech. used */
+.small-text{
+    font-size: 0.8em;
+}
+
+/* header section */
+
+/* main header row */
+.header-row{
+    line-height: 3em;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #979797;
+}
+
+/* logos, icons */
+.small-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* page logo */
+.logo{
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #182153;
+}
+
+/* menu icons */
+.menu-icon,
+.menu-close-icon{
+    font-size: 1.4em;
+    line-height: 3em;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.menu-close-icon{
+    display: none;
+}
+
+/* navigation tabs */
+nav div{
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+nav div:first-child{
+    border-top: 1px solid #dbdbdb;
+}
+
+nav div:last-child{
+    border-bottom: none;
+}
+
+/* navigational links */
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #182153;
+}
+
+/* navigation hover */
+nav div:hover{
+    background-color: #182153;
+}
+
+nav div:hover a{
+    color: white;
+}
+
+/* intro section */
+
+/* background image */
+.hero{
+    background-image: linear-gradient(rgba(24, 33, 83, 0.7), rgba(24, 33, 83, 0.7)), url("images/hero-img.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 4em;
+}
+
+/* responsive intro section */
+.hero .callout{
+    padding: 1em 0.5em;
+    text-align: center;
+    background-color: #dbdbdb;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* education section */
+
+/* bg-color - changes every alt. section  */
+.education{
+    background-color: #dbdbdb;
+}
+
+/* skills section */
+
+/* style the given skills */
+.skills .item{
+    display: flex;
+    justify-content: left;
+    background-color: #182153;
+    padding: 0.5em 0;
+    padding-left: 2em;
+    margin: 1em 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    color: rgb(230, 227, 227);
+}
+
+/* last item in skills list */
+.skills .item:last-child{
+    margin-bottom: 0;
+}
+
+/* skill icon */
+.skills img{
+    margin-right: 1em;
+}
+.logocis>a {
+    background: url(https://www.cisin.com/images/logo.png);
+    width: 113px;
+    height: 68px;
+    display: block;
+    background-color: #141414;
+    border-radius: 5%;
+}
+
+/* contact section */
+
+/* bg-color - changes every alt. section */
+.contact{
+    background-color: #dbdbdb;
+}
+
+/* styling contact form */
+.contact input{
+    height: 2.5em;
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 2px;
+    border: none;
+    padding: 5px;
+}
+
+/* resetting name and email field */
+.contact input[id="name"]{
+    margin-right: 0;
+}
+
+.contact input[id="email"]{
+    margin-left: 0;
+}
+
+/* text area - enough space for message */
+.contact textarea {
+    height: 8em;
+    width: 100%;
+    margin-bottom: 1em;
+    border: none;
+    font-size: 1.1em;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.contact input[type="submit"]{
+    background-color: #182153;
+    color: white;
+}
+
+/* style social media icons */
+.contact .social{
+    line-height: 3em;
+    border-top: 1px solid #979797;
+}
+
+.social a{
+    text-decoration: none;    
+    color: #182153;
+    margin-right: 15px;
+}
+
+.social a:hover{
+    color: white;
+}
+
+/* footer section */
+
+footer{
+    padding: 1em 0;
+    font-size: 0.8em;
+    background-color: rgb(90, 89, 89);
+    color: rgb(214, 214, 214);
+}
+
+/* projects section */
+
+#projects p{
+    padding-top: 1em;
+    font-size: 0.9em;
+}
+
+#projects .small-text{
+    font-size: 0.75em;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+
+    background-color: #5bc0de;
+}
+
+/* responsive html - successive increase in screen size */
+
+@media only screen and (min-width : 500px){
+    h2{
+        font-size: 1.3em;
+    }
+  
+    h5{
+        font-size: 0.8em;
+    }
+
+    p{
+        font-size: 0.9em;
+    }
+
+    .row{
+        width: 80%;
+    }
+
+    .hero .callout{
+        width: 70%;
+    }
+
+    .contact input[id="name"],
+    .contact input[id="email"]{
+        width: 49%;
+    }
+    
+    .contact input[id="name"]{
+        margin-right: 1%;
+    }
+    
+    .contact input[id="email"]{
+        margin-left: 1%;
+    }
+
+}
+
+@media only screen and (min-width : 746px) {
+    h2{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    .row{
+        flex-direction: row;
+    }
+
+    .column{
+        width: 50%;
+        margin-top: 1em;
+    }
+
+    .column:first-child{
+        margin-right: 2em;
+        text-align: right;
+    }
+    
+    .column:last-child{
+        margin-left: 2em;
+        text-align: left;
+    }
+
+    .header-row{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    header i{
+        display: none !important;
+    }
+
+    nav div{
+        border: 0 !important;
+        width: 8em;
+        display: inline-block !important;
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .hero .callout{
+        padding: 2em 1em;
+        width: 50%;
+    }
+
+    .skills .item{
+        display: inline-flex;
+        justify-content: left;
+        padding-left: 2em;
+        width: 70%;
+    }
+
+    #projects .column:first-child{
+        margin-right: 3em;
+        text-align: left;
+    }
+    
+    #projects .column:last-child{
+        margin-left: 3em;
+        text-align: left;
+    }
+
+    #projects p{
+        padding-top: 1em;
+        font-size: 0.9em;
+    }
+
+    #projects ul{
+        list-style-type: square;
+    }
+}
+
+@media only screen and (min-width : 840px) {
+    .logo{
+        font-size: 1.5em;
+    }
+    
+    nav div{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width : 917px) {
+    .skills .item{
+        width: 60%;
+    }
+}
